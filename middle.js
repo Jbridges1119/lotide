@@ -20,14 +20,14 @@ const assertArraysEqual = function(actual, expected) {
 const middle = function(array) {
   let middle = [];
   if (array.length < 3) {
-    return console.log(middle);
+    return middle;
   }
-  if (array.length % 2 === 0) {
+  if (Number.isInteger(array.length / 2)) {
     middle.push(array[((array.length) / 2) - 1], array[(array.length / 2)]);
-    return console.log(middle);
+    return middle;
   }
   middle.push(array[Math.ceil(array.length / 2) - 1]);
-  return console.log(middle);
+  return middle;
 };
 
 
