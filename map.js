@@ -1,17 +1,3 @@
-const words = ["ground", "control", "to", "major", "tom"];
-const numbers = [ 2, 4, 5, 3]
-
-const map = function(array, callback) {
-  const results = [];
-  for (let item of array) {
-    results.push(callback(item));
-  }
-  return results;
-}
-
-
-
-
 const eqArrays = function(actual, expected) {
   if (actual.length !== expected.length) {
     return false;
@@ -31,6 +17,18 @@ const assertArraysEqual = function(actual, expected) {
   return console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
 };
 
+
+const words = ["ground", "control", "to", "major", "tom"];
+const numbers = [ 2, 4, 5, 3]
+
+const map = function(array, callback) {
+  const results = [];
+  for (let item of array) {
+    results.push(callback(item));
+  }
+  return results;
+}
+
 const results1 = map(words, word => word[0]);
 console.log(results1);
 assertArraysEqual(results1,[ 'g', 'c', 't', 'm', 't' ])
@@ -46,3 +44,8 @@ assertArraysEqual(results3, [6,7,2,5,3])
 const results4 = map(words, word => word.toUpperCase())
 console.log(results4)
 assertArraysEqual(results4, ["ground", "control", "to", "major", "tom"])
+
+
+
+
+

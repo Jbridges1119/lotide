@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -10,7 +10,7 @@ const assertEqual = function(actual, expected) {
 //Lower is my code
 
 
-const findKey = function(obj, callback) {
+const findKey = (obj, callback) => {
   for(let key in obj){
     if(callback(obj[key])){
       return key
