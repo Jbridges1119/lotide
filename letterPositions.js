@@ -34,4 +34,5 @@ const letterPositions = function(sentence) {
 
 
 
-assertArraysEqual(letterPositions("hello"), { h: [0], e: [1], l: [2, 3], o: [4] }); // => should PASS
+// assertArraysEqual(letterPositions("hello"), { h: [0], e: [1], l: [2, 3], o: [4] }); // => should PASS
+module.exports = letterPositions;

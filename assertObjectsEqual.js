@@ -38,9 +38,11 @@ const assertObjectsEqual = function(actual, expected) {
   }
   return console.log(`🛑🛑🛑Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
 };
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: "2", c: "1" };
-assertObjectsEqual(cd, dc); // => true
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: "2", c: "1" };
+// assertObjectsEqual(cd, dc); // => true
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertObjectsEqual(eqObjects(cd, cd2), true); // => false
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// assertObjectsEqual(eqObjects(cd, cd2), true); // => false
+
+module.exports = assertObjectsEqual;

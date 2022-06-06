@@ -18,4 +18,6 @@ const countLetters = function(sentence) {
   } return console.log(results);
 };
 
-countLetters("lighthouse in the house");
+//countLetters("lighthouse in the house");
+
+module.exports = countLetters;

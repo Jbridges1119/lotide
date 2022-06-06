@@ -19,32 +19,34 @@ const findKey = (obj, callback) => {
 }
 
 
-const result1 = findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2) // => "noma"
+// const result1 = findKey({
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// }, x => x.stars === 2) // => "noma"
 
-/* this is call back function.
-function(x){
-  if(x.stars === 2) {
-    return true
-  }
-}
-*/
+// /* this is call back function.
+// function(x){
+//   if(x.stars === 2) {
+//     return true
+//   }
+// }
+// */
 
-const result2 = findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 3)
+// const result2 = findKey({
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// }, x => x.stars === 3)
 
-console.log(result1)
-assertEqual(result1, "noma")
-assertEqual(result2, "Akaleri")
+// console.log(result1)
+// assertEqual(result1, "noma")
+// assertEqual(result2, "Akaleri")
+
+module.exports = findKey;
