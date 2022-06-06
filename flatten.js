@@ -16,7 +16,8 @@ const assertArraysEqual = function(actual, expected) {
   }
   return console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
 };
-const flatten = (nestedArray) => flatArray = nestedArray.flat()
+
+const flatten = (nestedArray) => flatArray = nestedArray.flat();
 
 // assertArraysEqual((flatten([1, 2, [3, 4], 5, [6]])), [1, 2, 3, 4, 5, 6]); // => [1, 2, 3, 4, 5, 6]
 
