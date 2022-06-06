@@ -18,8 +18,5 @@ const eqArrays = function(actual, expected) {
   } return true;
 };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-eqArrays([1, 2, 3], [3, 2, 1]) // => should fail
-eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => should PASS
-eqArrays(["1", "2", "3"], ["1", "2", 3]); // => should fail
 
+module.exports = assertEqual;
