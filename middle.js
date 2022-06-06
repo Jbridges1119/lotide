@@ -19,7 +19,7 @@
 
 const middle = function(array) {
   let middle = [];
-  let half = array.length / 2
+  let half = array.length / 2;
   if (array.length < 3) {
     return middle;
   }

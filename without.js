@@ -19,13 +19,13 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 const without = function(source, itemsToRemove) {
-  let missingItems = []
-  for(let items of source){
-    if(!itemsToRemove.includes(items)) {
-      missingItems.push(items)
+  let missingItems = [];
+  for (let items of source) {
+    if (!itemsToRemove.includes(items)) {
+      missingItems.push(items);
     }
-  } return missingItems
-}
+  } return missingItems;
+};
 
 /*const words = ["hello", "world", "lighthouse"];
 
