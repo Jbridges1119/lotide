@@ -15,8 +15,10 @@ const eqArrays = function(actual, expected) {
     if (actual[i] !== expected[i]) {
       return false;
     }
-  } return true;
+    
+  } 
+  return true;
 };
 
 
-module.exports = assertEqual;
+module.exports = eqArrays;
